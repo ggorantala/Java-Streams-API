@@ -10,24 +10,24 @@ package dev.ggorantala.strings.operations;
  * Date: 16/09/24
  */
 public class ReplaceAndReplaceAll {
-    public static void main(String[] args) {
-        replace();
-    }
+  public static void main(String[] args) {
+    replace();
+  }
 
-    private static void replace() {
-        String text = "Hello, World!";
-        String newText = text.replace('l', 'x');  // "Hexxo, Worxd!"
-        System.out.println(newText);  // Outputs: "Hexxo, Worxd!"
+  private static void replace() {
+    String text = "Hello, World!";
+    String newText = text.replace('l', 'x'); // "Hexxo, Worxd!"
+    System.out.println(newText); // Outputs: "Hexxo, Worxd!"
 
-        // You can also replace entire substrings:
-        String text1 = "I love Java!";
-        String newText1 = text1.replace("Java", "Python");  // "I love Python!"
-        System.out.println(newText1);  // Outputs: "I love Python!"
-    }
+    // You can also replace entire substrings:
+    String text1 = "I love Java!";
+    String newText1 = text1.replace("Java", "Python"); // "I love Python!"
+    System.out.println(newText1); // Outputs: "I love Python!"
+  }
 
-    private static void replaceAll() {
-        String text = "123abc456";
-        String newText = text.replaceAll("\\d", "X");  // Replaces all digits with 'X'
-        System.out.println(newText);  // Outputs: "XXXabcXXX"
-    }
+  private static void replaceAll() {
+    String text = "123abc456";
+    String newText = text.replaceAll("\\d", "X"); // Replaces all digits with 'X'
+    System.out.println(newText); // Outputs: "XXXabcXXX"
+  }
 }

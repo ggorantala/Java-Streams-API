@@ -10,9 +10,9 @@ package dev.ggorantala.strings.operations;
  * Date: 16/09/24
  */
 public class Strip {
-    public static void main(String[] args) {
-        String text = "   Hello   ";
-        String strippedText = text.strip();  // "Hello"
-        System.out.println(strippedText);  // Outputs: "Hello"
-    }
+  public static void main(String[] args) {
+    String text = "   Hello   ";
+    String strippedText = text.strip(); // "Hello"
+    System.out.println(strippedText); // Outputs: "Hello"
+  }
 }

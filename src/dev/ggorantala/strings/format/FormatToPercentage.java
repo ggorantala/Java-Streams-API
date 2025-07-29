@@ -12,12 +12,12 @@ import java.text.NumberFormat;
  * Date: 16/09/24
  */
 public class FormatToPercentage {
-    public static void main(String[] args) {
-        double fraction = 0.75;
+  public static void main(String[] args) {
+    double fraction = 0.75;
 
-        NumberFormat percentFormatter = NumberFormat.getPercentInstance();
-        String formattedPercent = percentFormatter.format(fraction);
+    NumberFormat percentFormatter = NumberFormat.getPercentInstance();
+    String formattedPercent = percentFormatter.format(fraction);
 
-        System.out.println(formattedPercent);  // Outputs: "75%"
-    }
+    System.out.println(formattedPercent); // Outputs: "75%"
+  }
 }

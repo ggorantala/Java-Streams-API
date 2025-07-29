@@ -12,13 +12,13 @@ import java.text.DecimalFormat;
  * Date: 16/09/24
  */
 public class FormattingWithLeadingZeros {
-    public static void main(String[] args) {
-        double number = 45.678;
+  public static void main(String[] args) {
+    double number = 45.678;
 
-        // Define a pattern to display leading zeros and three decimal places
-        DecimalFormat df = new DecimalFormat("0000.000");
-        String formattedNumber = df.format(number);
+    // Define a pattern to display leading zeros and three decimal places
+    DecimalFormat df = new DecimalFormat("0000.000");
+    String formattedNumber = df.format(number);
 
-        System.out.println(formattedNumber);  // Outputs: "0045.678"
-    }
+    System.out.println(formattedNumber); // Outputs: "0045.678"
+  }
 }

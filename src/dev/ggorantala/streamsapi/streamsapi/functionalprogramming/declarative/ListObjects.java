@@ -1,4 +1,5 @@
 package dev.ggorantala.streamsapi.streamsapi.functionalprogramming.declarative;
+
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -14,13 +15,13 @@ import dev.ggorantala.streamsapi.model.Book;
 import java.util.List;
 
 public class ListObjects {
-    public static void main(String[] args) {
-        List<Book> declarativeApproach =
-            Book.BOOKS.stream()
-                .filter(book -> book.costInEuros() >= 5)
-                // .collect(Collectors.toList());
-                .toList();
+  public static void main(String[] args) {
+    List<Book> declarativeApproach =
+        Book.BOOKS.stream()
+            .filter(book -> book.costInEuros() >= 5)
+            // .collect(Collectors.toList());
+            .toList();
 
-        declarativeApproach.forEach(System.out::println);
-    }
+    declarativeApproach.forEach(System.out::println);
+  }
 }

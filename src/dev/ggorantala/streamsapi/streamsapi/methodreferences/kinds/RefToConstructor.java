@@ -1,4 +1,5 @@
 package dev.ggorantala.streamsapi.streamsapi.methodreferences.kinds;
+
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -17,14 +18,14 @@ import java.util.stream.Collectors;
 
 public class RefToConstructor {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        List<Person> people =
-            Constants.STRING_LIST // collection of names stored in list
-                .stream() // stream of names
-                .map(Person::new) // calling the constructor
-                .collect(Collectors.toList());
+    List<Person> people =
+        Constants.STRING_LIST // collection of names stored in list
+            .stream() // stream of names
+            .map(Person::new) // calling the constructor
+            .collect(Collectors.toList());
 
-        System.out.println(people);
-    }
+    System.out.println(people);
+  }
 }

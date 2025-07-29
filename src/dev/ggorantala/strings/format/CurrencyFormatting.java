@@ -13,14 +13,14 @@ import java.util.Locale;
  * Date: 16/09/24
  */
 public class CurrencyFormatting {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        double price = 1234567.89;
+    double price = 1234567.89;
 
-        // Get the currency instance for the US locale
-        NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.US);
-        String formattedPrice = currencyFormatter.format(price);
+    // Get the currency instance for the US locale
+    NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.US);
+    String formattedPrice = currencyFormatter.format(price);
 
-        System.out.println(formattedPrice);  // Outputs: "$1,234,567.89"
-    }
+    System.out.println(formattedPrice); // Outputs: "$1,234,567.89"
+  }
 }

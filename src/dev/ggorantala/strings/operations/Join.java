@@ -10,15 +10,15 @@ package dev.ggorantala.strings.operations;
  * Date: 16/09/24
  */
 public class Join {
-    public static void main(String[] args) {
-        String[] words = {"apple", "banana", "cherry"};
-        String combined = String.join(", ", words);  // Combines with a comma and space
+  public static void main(String[] args) {
+    String[] words = {"apple", "banana", "cherry"};
+    String combined = String.join(", ", words); // Combines with a comma and space
 
-        System.out.println(combined);  // Outputs: "apple, banana, cherry"
+    System.out.println(combined); // Outputs: "apple, banana, cherry"
 
-        // joining strings with no delimetr
-        String[] parts = {"H", "e", "l", "l", "o"};
-        String combined1 = String.join("", parts);  // Combines with no spaces
-        System.out.println(combined1);  // Outputs: "Hello"
-    }
+    // joining strings with no delimetr
+    String[] parts = {"H", "e", "l", "l", "o"};
+    String combined1 = String.join("", parts); // Combines with no spaces
+    System.out.println(combined1); // Outputs: "Hello"
+  }
 }

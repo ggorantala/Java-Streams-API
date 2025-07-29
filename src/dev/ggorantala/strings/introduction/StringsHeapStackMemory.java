@@ -10,13 +10,13 @@ package dev.ggorantala.strings.introduction;
  * Date: 16/09/24
  */
 public class StringsHeapStackMemory {
-    public static void main(String[] args) {
-        // references are stored in stack and objects on heap
-        String literalString = "Hello";  // Stored in String Pool (on Heap)
-        String newString = "World";  // Stored in Heap (outside the String Pool)
+  public static void main(String[] args) {
+    // references are stored in stack and objects on heap
+    String literalString = "Hello"; // Stored in String Pool (on Heap)
+    String newString = "World"; // Stored in Heap (outside the String Pool)
 
-        // string pool optimizes memory
-        String s1 = "Hello";
-        String s2 = "Hello";  // Reuses the same object from the String Pool
-    }
+    // string pool optimizes memory
+    String s1 = "Hello";
+    String s2 = "Hello"; // Reuses the same object from the String Pool
+  }
 }

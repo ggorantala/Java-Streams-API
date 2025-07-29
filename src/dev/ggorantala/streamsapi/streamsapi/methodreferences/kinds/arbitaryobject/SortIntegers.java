@@ -1,4 +1,5 @@
 package dev.ggorantala.streamsapi.streamsapi.methodreferences.kinds.arbitaryobject;
+
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -13,11 +14,11 @@ import dev.ggorantala.streamsapi.constants.Constants;
 
 public class SortIntegers {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        Constants.INTEGERS_LIST // list of integers
-            .stream() // stream of integers
-            .sorted(Integer::compareTo) // method reference
-            .forEach(System.out::println); // print on console
-    }
+    Constants.INTEGERS_LIST // list of integers
+        .stream() // stream of integers
+        .sorted(Integer::compareTo) // method reference
+        .forEach(System.out::println); // print on console
+  }
 }

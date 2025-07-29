@@ -12,14 +12,14 @@ import java.text.DecimalFormat;
  * Date: 16/09/24
  */
 public class FormattingToThousandsSeparator {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        double number = 1234567.89;
+    double number = 1234567.89;
 
-        // Define a pattern to format with commas and two decimal places
-        DecimalFormat df = new DecimalFormat("#,###.00");
-        String formattedNumber = df.format(number);
+    // Define a pattern to format with commas and two decimal places
+    DecimalFormat df = new DecimalFormat("#,###.00");
+    String formattedNumber = df.format(number);
 
-        System.out.println(formattedNumber);  // Outputs: "1,234,567.89"
-    }
+    System.out.println(formattedNumber); // Outputs: "1,234,567.89"
+  }
 }

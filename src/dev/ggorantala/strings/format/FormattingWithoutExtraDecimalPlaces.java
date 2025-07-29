@@ -12,12 +12,12 @@ import java.text.DecimalFormat;
  * Date: 16/09/24
  */
 public class FormattingWithoutExtraDecimalPlaces {
-    public static void main(String[] args) {
-        double number = 45.6;
+  public static void main(String[] args) {
+    double number = 45.6;
 
-        DecimalFormat df = new DecimalFormat("#.##");
-        String formattedNumber = df.format(number);
+    DecimalFormat df = new DecimalFormat("#.##");
+    String formattedNumber = df.format(number);
 
-        System.out.println(formattedNumber);  // Outputs: "45.6"
-    }
+    System.out.println(formattedNumber); // Outputs: "45.6"
+  }
 }

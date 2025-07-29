@@ -10,7 +10,5 @@ package dev.ggorantala.collections;
  * Date: 17/09/24
  */
 public class ListsDemo {
-    public static void main(String[] args) {
-
-    }
+  public static void main(String[] args) {}
 }

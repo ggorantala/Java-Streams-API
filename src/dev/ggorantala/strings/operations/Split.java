@@ -10,21 +10,20 @@ package dev.ggorantala.strings.operations;
  * Date: 16/09/24
  */
 public class Split {
-    public static void main(String[] args) {
-        String text = "Hello World Welcome";
-        String[] words = text.split(" ");  // Splits the string by spaces
+  public static void main(String[] args) {
+    String text = "Hello World Welcome";
+    String[] words = text.split(" "); // Splits the string by spaces
 
-        for (String word : words) {
-            System.out.println(word);
-        }
-
-
-        // splitting by comma
-        String csv = "apple,banana,cherry";
-        String[] fruits = csv.split(",");  // Splits by commas
-
-        for (String fruit : fruits) {
-            System.out.println(fruit);
-        }
+    for (String word : words) {
+      System.out.println(word);
     }
+
+    // splitting by comma
+    String csv = "apple,banana,cherry";
+    String[] fruits = csv.split(","); // Splits by commas
+
+    for (String fruit : fruits) {
+      System.out.println(fruit);
+    }
+  }
 }

@@ -10,7 +10,6 @@ package dev.ggorantala.streamsapi.streamsapi.otherstreams;
  */
 
 import dev.ggorantala.streamsapi.constants.Constants;
-
 import java.util.stream.IntStream;
 
 public class IntStreamExample {

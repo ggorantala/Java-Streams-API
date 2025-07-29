@@ -1,4 +1,5 @@
 package dev.ggorantala.streamsapi.streamsapi.functionalprogramming.interfaces;
+
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -10,19 +11,18 @@ package dev.ggorantala.streamsapi.streamsapi.functionalprogramming.interfaces;
  */
 
 import dev.ggorantala.streamsapi.model.Book;
-
 import java.util.List;
 
 public interface NormalInterfaceService {
-    void addBook(Book book);
+  void addBook(Book book);
 
-    void deleteBook(Long bookId);
+  void deleteBook(Long bookId);
 
-    void updateBook(Long bookId, Book book);
+  void updateBook(Long bookId, Book book);
 
-    void deleteBooksByAuthor(String author);
+  void deleteBooksByAuthor(String author);
 
-    List<Book> getAllBooks();
+  List<Book> getAllBooks();
 
-    Book findBookById(Long bookId);
+  Book findBookById(Long bookId);
 }

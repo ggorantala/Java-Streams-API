@@ -10,19 +10,19 @@ package dev.ggorantala.strings.introduction;
  * Date: 16/09/24
  */
 public class CreateStrings {
-    public static void main(String[] args) {
-        // using string literal
-        String greeting = "Hello, world!";
+  public static void main(String[] args) {
+    // using string literal
+    String greeting = "Hello, world!";
 
-        // using constructor
-        String name = "John Doe";
+    // using constructor
+    String name = "John Doe";
 
-        // using char[], array of characters
-        char[] charArray = {'H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!'}; // char array
-        String newGreeting = new String(charArray); // Hello world!
+    // using char[], array of characters
+    char[] charArray = {'H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!'}; // char array
+    String newGreeting = new String(charArray); // Hello world!
 
-        // immutability
-        String original = "Hello";
-        String modified = original.concat(", World!");
-    }
+    // immutability
+    String original = "Hello";
+    String modified = original.concat(", World!");
+  }
 }

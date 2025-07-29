@@ -1,4 +1,5 @@
 package dev.ggorantala.streamsapi.streamsapi.streams.introduction;
+
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -16,9 +17,9 @@ import java.util.stream.IntStream;
 
 public class ArrayStream {
 
-    public static void main(String[] args) {
-        IntStream myStream = Arrays.stream(Constants.INPUT_ARRAY);
+  public static void main(String[] args) {
+    IntStream myStream = Arrays.stream(Constants.INPUT_ARRAY);
 
-        myStream.forEach(System.out::println);
-    }
+    myStream.forEach(System.out::println);
+  }
 }

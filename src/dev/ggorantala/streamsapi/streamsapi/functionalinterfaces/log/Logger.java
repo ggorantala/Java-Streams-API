@@ -1,4 +1,5 @@
 package dev.ggorantala.streamsapi.streamsapi.functionalinterfaces.log;
+
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -11,5 +12,5 @@ package dev.ggorantala.streamsapi.streamsapi.functionalinterfaces.log;
 
 @FunctionalInterface
 public interface Logger {
-    void logMessage(String message);
+  void logMessage(String message);
 }

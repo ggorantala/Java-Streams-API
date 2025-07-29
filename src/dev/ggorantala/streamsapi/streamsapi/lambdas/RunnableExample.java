@@ -1,4 +1,5 @@
 package dev.ggorantala.streamsapi.streamsapi.lambdas;
+
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -12,7 +13,7 @@ package dev.ggorantala.streamsapi.streamsapi.lambdas;
 import dev.ggorantala.streamsapi.constants.Constants;
 
 public class RunnableExample {
-    public static void main(String[] args) {
-        Runnable helloWorld = () -> System.out.println(Constants.GREETING_MESSAGE);
-    }
+  public static void main(String[] args) {
+    Runnable helloWorld = () -> System.out.println(Constants.GREETING_MESSAGE);
+  }
 }

@@ -10,9 +10,9 @@ package dev.ggorantala.strings.operations;
  * Date: 16/09/24
  */
 public class Trim {
-    public static void main(String[] args) {
-        String text = "   Hello, World!   ";
-        String trimmedText = text.trim();  // "Hello, World!"
-        System.out.println(trimmedText);  // Outputs: "Hello, World!"
-    }
+  public static void main(String[] args) {
+    String text = "   Hello, World!   ";
+    String trimmedText = text.trim(); // "Hello, World!"
+    System.out.println(trimmedText); // Outputs: "Hello, World!"
+  }
 }

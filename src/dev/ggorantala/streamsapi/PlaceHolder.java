@@ -1,4 +1,5 @@
 package dev.ggorantala.streamsapi;
+
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -10,7 +11,7 @@ package dev.ggorantala.streamsapi;
  */
 
 public class PlaceHolder {
-    public static void main(String[] args) {
-        System.out.println("STREAMS API");
-    }
+  public static void main(String[] args) {
+    System.out.println("STREAMS API");
+  }
 }

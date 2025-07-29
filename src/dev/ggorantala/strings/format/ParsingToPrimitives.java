@@ -10,54 +10,53 @@ package dev.ggorantala.strings.format;
  * Date: 16/09/24
  */
 public class ParsingToPrimitives {
-    public static void main(String[] args) {
-        intergerParsing();
-        doubleParsing();
-        otherParsing();
+  public static void main(String[] args) {
+    intergerParsing();
+    doubleParsing();
+    otherParsing();
 
-        // exceptions
-        parsingExceptions();
+    // exceptions
+    parsingExceptions();
+  }
+
+  private static void intergerParsing() {
+    String numberStr = "123";
+    int number = Integer.parseInt(numberStr); // Converts "123" to 123
+    System.out.println(number + 10); // Outputs: 133
+  }
+
+  private static void doubleParsing() {
+    String priceStr = "12.34";
+    double price = Double.parseDouble(priceStr); // Converts "12.34" to 12.34
+    System.out.println(price + 1.5); // Outputs: 13.84
+  }
+
+  private static void otherParsing() {
+    String trueStr = "true";
+    boolean flag = Boolean.parseBoolean(trueStr); // Converts "true" to true
+    System.out.println(flag); // Outputs: true
+  }
+
+  private static void parsingExceptions() {
+    String numberStr = "abc";
+
+    try {
+      int number = Integer.parseInt(numberStr);
+      System.out.println("The number is: " + number);
+    } catch (NumberFormatException e) {
+      System.out.println("Invalid number format: " + numberStr);
     }
 
-    private static void intergerParsing() {
-        String numberStr = "123";
-        int number = Integer.parseInt(numberStr);  // Converts "123" to 123
-        System.out.println(number + 10);  // Outputs: 133
+    // number format exceptions
+    String[] numbers = {"123", "456", "abc", "789"};
+
+    for (String numberString : numbers) {
+      try {
+        int number = Integer.parseInt(numberString);
+        System.out.println("Parsed number: " + number);
+      } catch (NumberFormatException e) {
+        System.out.println("Invalid number: " + numberString);
+      }
     }
-
-    private static void doubleParsing() {
-        String priceStr = "12.34";
-        double price = Double.parseDouble(priceStr);  // Converts "12.34" to 12.34
-        System.out.println(price + 1.5);  // Outputs: 13.84
-    }
-
-    private static void otherParsing() {
-        String trueStr = "true";
-        boolean flag = Boolean.parseBoolean(trueStr);  // Converts "true" to true
-        System.out.println(flag);  // Outputs: true
-    }
-
-    private static void parsingExceptions() {
-        String numberStr = "abc";
-
-        try {
-            int number = Integer.parseInt(numberStr);
-            System.out.println("The number is: " + number);
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid number format: " + numberStr);
-        }
-
-
-        // number format exceptions
-        String[] numbers = {"123", "456", "abc", "789"};
-
-        for (String numberString : numbers) {
-            try {
-                int number = Integer.parseInt(numberString);
-                System.out.println("Parsed number: " + number);
-            } catch (NumberFormatException e) {
-                System.out.println("Invalid number: " + numberString);
-            }
-        }
-    }
+  }
 }

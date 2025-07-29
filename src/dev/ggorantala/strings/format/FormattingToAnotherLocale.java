@@ -13,11 +13,11 @@ import java.util.Locale;
  * Date: 16/09/24
  */
 public class FormattingToAnotherLocale {
-    public static void main(String[] args) {
-        double price = 1234567.89;
-        NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.GERMANY);
-        String formattedPrice = currencyFormatter.format(price);
+  public static void main(String[] args) {
+    double price = 1234567.89;
+    NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.GERMANY);
+    String formattedPrice = currencyFormatter.format(price);
 
-        System.out.println(formattedPrice);  // Outputs: "1.234.567,89 €"
-    }
+    System.out.println(formattedPrice); // Outputs: "1.234.567,89 €"
+  }
 }
